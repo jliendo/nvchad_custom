@@ -32,7 +32,6 @@ lspconfig["yamlls"].setup {
       customTags = {
         "!GetAtt",
         "!Ref",
-        "!ImportValue",
       },
       schemas = {
         'https://raw.githubusercontent.com/awslabs/goformation/v4.18.2/schema/cloudformation.schema.json: "/*"',

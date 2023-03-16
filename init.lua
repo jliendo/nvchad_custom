@@ -5,3 +5,5 @@
 --   pattern = "*",
 --   command = "tabdo wincmd =",
 -- })
+-- Ctrl-P
+vim.g.ctrlp_cmd = 'CtrlPBuffer'

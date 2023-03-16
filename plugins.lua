@@ -50,9 +50,14 @@ local plugins = {
     enabled = true,
     lazy = false,
   },
+
   {
-    "github/copilot.vim",
-    lazy = false
+    "zbirenbaum/copilot.lua",
+    lazy = false,
+    config = function()
+      require("custom.configs.copilot")
+    end,
+    }
   }
 
   -- To make a plugin not be loaded
@@ -66,5 +71,4 @@ local plugins = {
   --   "folke/which-key.nvim",
   --   enabled = true,
   -- },
-}
 return plugins
