@@ -12,9 +12,9 @@ M.ui = {
   hl_add = highlights.add,
 
   tabufline = {
+    enabled = false,
     lazyload = true,
     overriden_modules = nil,
-    enabled = false
   },
 
   telescope = {
