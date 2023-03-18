@@ -11,7 +11,7 @@ local sources = {
   -- webdev stuff
   -- b.formatting.deno_fmt, -- choosed deno for ts/js files cuz its very fast!
   b.diagnostics.cfn_lint.with { filetypes = { "yaml", "yml"} },
-  b.diagnostics.eslint_d.with { filetypes = { "html", "javascript", "typescript"} },
+  b.diagnostics.eslint_d.with { filetypes = { "svelte", "javascript", "typescript"} },
   b.formatting.prettier.with { filetypes = { "svelte", "javascript", "typescript", "html", "markdown", "css" } }, -- so prettier works only on these filetypes
 
   -- Lua
