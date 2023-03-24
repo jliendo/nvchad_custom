@@ -1,10 +1,3 @@
-require("copilot").setup({
-  panel = {
-    layout = {
-      position = "right"
-    }
-  },
-  suggestion = {
-    auto_trigger = false,
-  }
-})
+vim.g.copilot_filetypes = {
+  yaml = true,
+}

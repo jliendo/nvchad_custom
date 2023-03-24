@@ -7,6 +7,19 @@ M.general = {
     ["<leader>dd"] = { "<cmd> Telescope diagnostics  <CR>", "diagnostics" },
   },
 }
+M.tabufline = {
+  plugin = true,
+
+  n = {
+    -- cycle through buffers
+    ["<C-TAB>"] = {
+      function()
+        require("nvchad_ui.tabufline").tabuflineNext()
+      end,
+      "goto next buffer",
+    },
+  }
+}
 
 -- more keybinds!
 

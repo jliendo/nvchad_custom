@@ -1,4 +1,4 @@
-local overrides = require("custom.configs.overrides")
+local overrides = require "custom.configs.overrides"
 
 ---@type NvPluginSpec[]
 local plugins = {
@@ -45,30 +45,30 @@ local plugins = {
   {
     "kien/ctrlp.vim",
     config = function()
-      require("custom.configs.ctrlp")
+      require "custom.configs.ctrlp"
     end,
     enabled = true,
     lazy = false,
   },
-
   {
-    "zbirenbaum/copilot.lua",
-    lazy = false,
+    "github/copilot.vim",
     config = function()
-      require("custom.configs.copilot")
+      require "custom.configs.copilot"
     end,
-    }
+    enabled = true,
+    lazy = false,
   }
+}
 
-  -- To make a plugin not be loaded
-  -- {
-  --   "NvChad/nvim-colorizer.lua",
-  --   enabled = false
-  -- },
+-- To make a plugin not be loaded
+-- {
+--   "NvChad/nvim-colorizer.lua",
+--   enabled = false
+-- },
 
-  -- Uncomment if you want to re-enable which-key
-  -- {
-  --   "folke/which-key.nvim",
-  --   enabled = true,
-  -- },
+-- Uncomment if you want to re-enable which-key
+-- {
+--   "folke/which-key.nvim",
+--   enabled = true,
+-- },
 return plugins
